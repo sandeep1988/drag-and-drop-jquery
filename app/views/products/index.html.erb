@@ -1,0 +1,23 @@
+<table class="table table-bordered table-striped" id="sortable">
+  <thead>
+    <tr>
+      <th>
+        Reference
+      </th>
+      <th>
+        Quantity
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @products.each do |product| %>
+      <tr data-item-id=<%= "#{product.id}" %> class="item">
+        <td><%= product.reference %></td>
+        <td><%= product.quantity %></td>
+        <td>
+            <%= link_to 'show', product_path(product), :class => 'btn btn-default pull-right' %>
+          </td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>

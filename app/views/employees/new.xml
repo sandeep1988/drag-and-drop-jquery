@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<employee>
+  <extension type="integer">3456</extension>
+  <name>Randy Rhodes</name>
+</employee>
